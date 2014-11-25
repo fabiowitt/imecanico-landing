@@ -159,6 +159,10 @@ a:hover, a:focus {
     height: 676px;
 }
 
+.modal-title, .modal-body {
+    color: black;
+}
+
 #how .features h4 {
     color: #99bf38
 }

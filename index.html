@@ -105,7 +105,8 @@
                         Acesse agora!
                     </a>
                     &nbsp;&nbsp;&nbsp;
-                    <a href="https://play.google.com/store/apps/details?id=com.movendoideias.imecanico2" class="btn btn-default">
+                    <a href="https://play.google.com/store/apps/details?id=com.movendoideias.imecanico2" class="btn btn-default"
+                       data-toggle="modal" data-target="#myModal">
                         <i class="fa fa-android"></i>
                         Disponível para Android!
                     </a>
@@ -294,6 +295,31 @@
         <p>Copyright &copy; iMecanico 2014</p>
     </div>
 </footer>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                <h4 class="modal-title" id="myModalLabel">Informe sua localização</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="control-label">Informe seu CEP</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="CEP">
+                        <span class="input-group-btn">
+                          <button id="verificaCEP" class="btn" type="button">Verificar</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- jQuery Version 1.11.0 -->
 <script src="js/jquery-1.11.0.js"></script>

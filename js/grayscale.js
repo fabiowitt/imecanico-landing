@@ -32,6 +32,17 @@ $(function () {
                 .end().appendTo('.fadein');
         },
         4000);
+
+    $("#verificaCEP").click(function () {
+        $.ajax({
+            url: "https://app.imecanico.com.br/services?cep=14091-220",
+            success: function (a) {
+                alert(a);
+            },
+            error : function (a, b, c){
+            }
+        });
+    });
 });
 
 // Closes the Responsive Menu on Menu Item Click
